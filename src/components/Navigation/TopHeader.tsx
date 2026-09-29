@@ -2,6 +2,7 @@ import React from 'react';
 import { Volume2, VolumeX, HelpCircle, Compass, ListOrdered } from 'lucide-react';
 import { sound } from '../../audio/soundEffects';
 import { SCENES, SceneId } from '../../types/crispr';
+import { PWAInstallButton } from '../PWA/PWAInstallButton';
 
 interface TopHeaderProps {
   currentSceneId: SceneId;
@@ -118,6 +119,9 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
 
         {/* Zone 3: Primary Actions */}
         <div className="flex items-center gap-2">
+          {/* Botón de instalación PWA (cuando está disponible / iOS) */}
+          <PWAInstallButton />
+
           {/* Selector de modo */}
           <button
             onClick={() => {

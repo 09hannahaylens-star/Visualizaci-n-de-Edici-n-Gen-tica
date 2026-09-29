@@ -10,6 +10,7 @@ import { SceneStepper } from './components/Navigation/SceneStepper';
 import { HelpModal } from './components/Navigation/HelpModal';
 import { SceneContainer } from './scenes/SceneContainer';
 import { sound } from './audio/soundEffects';
+import { OfflineIndicator } from './components/PWA/OfflineIndicator';
 
 export default function App() {
   const [currentSceneId, setCurrentSceneId] = useState<SceneId>('hero');
@@ -101,6 +102,9 @@ export default function App() {
         isOpen={isHelpOpen}
         onClose={() => setIsHelpOpen(false)}
       />
+
+      {/* Indicador de modo sin conexión */}
+      <OfflineIndicator />
 
       {/* Marca de autoría discreta, elegante y legible */}
       <div
