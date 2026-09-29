@@ -1,0 +1,8 @@
+{
+  "name": "Remix CRISPR: Del ADN a la Edición",
+  "description": "Visualizador interactivo y cinematográfico del proceso molecular de edición genética mediante CRISPR-Cas9, del organismo al ADN, corte, reparación y aplicaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
